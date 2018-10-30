@@ -136,9 +136,9 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 解压，在文件下找到flutter_console.bat，这个就是flutter命令行，运行flutter doctor检测(或者配置环境变量后直接在cmd上运行)：
 
-![flutter_doctor1](flutter_doctor1.png)
+![flutter_doctor1](/mdimage/flutter_doctor1.png)
 
-![flutter_doctor2](flutter_doctor2.png)
+![flutter_doctor2](/mdimage/flutter_doctor2.png)
 
 
 
@@ -165,7 +165,7 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 定位到Android Studio 工具栏:
 
-![control](control.png)
+![control](/mdimage/control.png)
 
 在 target selector 中, 选择一个运行该应用的Android设备. 如果没有列出可用，请选择 Tools>Android>AVD Manager 并在那里创建一个
 
