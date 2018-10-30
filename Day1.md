@@ -114,3 +114,88 @@ Flutter 在开发工具的选择上很灵活。 应用程序可以通过命令�
 **VS Code 提供了更轻松的开发体验**，因此它的启动速度往往比 Android Studio / IntelliJ 更快。
 
 **Android Studio 提供了最多的功能。**例如 Flutter Inspector 来分析正在运行的应用程序的窗口部件以及监视应用程序性能。 还提供了开发部件层次结构时很方便的几个重构。
+
+## 环境安装
+
+
+
+由于在国内，需要配置下面两个环境变量
+
+```
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+```
+
+变量名：PUB_HOSTED_URL，变量值：https://pub.flutter-io.cn
+
+
+
+下载Flutter SDK的网址：https://flutter.io/sdk-archive/#windows
+
+
+
+解压，在文件下找到flutter_console.bat，这个就是flutter命令行，运行flutter doctor检测(或者配置环境变量后直接在cmd上运行)：
+
+![flutter_doctor1](flutter_doctor1.png)
+
+![flutter_doctor2](flutter_doctor2.png)
+
+
+
+## Android Studio安装
+
+#### 环境：
+
+1. Android Studio需要3.0或更高版本
+2. Flutter支持的sdk环境：Android 4.1（API 16）或者更高版本。
+
+#### 需要安装Flutter和Dart插件
+
+- Flutter插件：支持Flutter开发工作流(运行、调试、热重载等)
+- Dart插件：提供代码分析(输入代码时进行验证、代码补全等)
+
+#### 安装上面两个插件的步骤:
+
+1. 启动Android Studio.
+2. 打开插件首选项 ( **Preferences>Plugins** on macOS, **File>Settings>Plugins** on Windows & Linux).
+3. 选择 **Browse repositories…**, 选择 Flutter 插件并点击 install.
+4. 重启Android Studio后插件生效.
+
+#### 体验Flutter
+
+定位到Android Studio 工具栏:
+
+![control](control.png)
+
+在 target selector 中, 选择一个运行该应用的Android设备. 如果没有列出可用，请选择 Tools>Android>AVD Manager 并在那里创建一个
+
+体验热重载：修改代码后，按快捷键(Ctrl + s)或者点击闪电⚡图标，即可热重载
+
+
+
+| 常用命令             | 含义                                    |
+| -------------------- | --------------------------------------- |
+| **--version**        | 查看Flutter版本                         |
+| **-h**或者**--help** | 打印所有命令行用法信息                  |
+| analyze              | 分析项目的Dart代码。                    |
+| **build**            | Flutter构建命令。                       |
+| channel              | 列表或开关Flutter通道。                 |
+| clean                | 删除构建/目录。                         |
+| config               | 配置Flutter设置。                       |
+| **create**           | 创建一个新的Flutter项目。               |
+| **devices**          | 列出所有连接的设备。                    |
+| **doctor**           | 展示了有关安装工具的信息。              |
+| drive                | 为当前项目运行Flutter驱动程序测试。     |
+| format               | 格式一个或多个Dart文件。                |
+| fuchsia_reload       | 在Fuchsia上进行热重载。                 |
+| **help**             | 显示帮助信息的Flutter。                 |
+| **install**          | 在附加设备上安装Flutter应用程序。       |
+| **logs**             | 显示用于运行Flutter应用程序的日志输出。 |
+| packages             | 命令用于管理Flutter包。                 |
+| precache             | 填充了Flutter工具的二进制工件缓存。     |
+| **run**              | 在附加设备上运行你的Flutter应用程序。   |
+| screenshot           | 从一个连接的设备截图。                  |
+| stop                 | 停止在附加设备上的Flutter应用。         |
+| test                 | 对当前项目的Flutter单元测试。           |
+| trace                | 开始并停止跟踪运行的Flutter应用程序。   |
+| **upgrade**          | 升级你的Flutter副本。                   |
